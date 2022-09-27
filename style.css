@@ -1,3 +1,64 @@
+@font-face {
+    font-family: GideonRoman;
+    src: url(./fonts/GideonRoman-Regular.ttf);
+  
+}
+
+:root {
+    font-family: GideonRoman;
+    background-color: rgb(255, 204, 229);
+    color: rgb(24, 0, 11);
+}
+
 main {
-    color: purple;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+main h1 {
+    margin-bottom: 0%;
+    font-size:100px;
+    text-align: center;
+}
+main h3 {
+    margin-top: 0%;
+    margin-right: 20%;
+    text-align: right;
+}
+
+main div div {
+    width: 30%; 
+    margin: 1%;
+    float: left; }
+
+main div div p {
+    text-align: justify;
+}
+a {
+    color: rgb(85, 0, 41);
+    text-decoration-line: none;
+}
+a:hover {
+    color: blueviolet;
+    text-decoration-line: underline;
+}
+
+@media screen and (max-width: 1280px) {
+main div div {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+}
+
+@media (prefers-color-scheme:dark){
+    :root {
+    background-color: rgb(55, 13, 56);
+    color: rgb(255, 204, 229);
+    }
+    a {
+        color:rgb(255, 204, 229);
+    }
 }
